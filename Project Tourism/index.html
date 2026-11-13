@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northscape Pakistan — Explore the Northern Areas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 18L10 8L14 14L17 10L21 18H4Z" fill="#13382C" stroke="#13382C" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-title">NORTHSCAPE</span>
+          <span class="brand-subtitle">PAKISTAN</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Tour Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-action">
+          <a href="#packages" class="btn btn-primary-custom btn-pill">
+            <i class="bi bi-send-fill me-1"></i> Plan Your Trip
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-bg-overlay"></div>
+        <div class="row align-items-center h-100 position-relative z-2">
+          <div class="col-lg-7 col-xl-6">
+            <div class="hero-content">
+              <span class="hero-tag">FIND YOUR WAY TO</span>
+              <h1 class="hero-title"><span class="title-the">the</span> North</h1>
+              <p class="hero-desc">
+                Unforgettable journeys through Pakistan's most breathtaking landscapes, crystal alpine lakes, and ancient mountain heritage.
+              </p>
+              <a href="#destinations" class="btn btn-primary-custom btn-pill">
+                Explore Destinations <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Search Bar -->
+      <div class="search-bar-wrapper">
+        <div class="search-bar">
+          <div class="search-item" data-dropdown="destination">
+            <div class="search-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="search-text">
+              <span class="search-label">DESTINATION</span>
+              <span class="search-value">Where to?</span>
+            </div>
+            <i class="bi bi-chevron-down ms-auto text-muted small"></i>
+            <div class="search-dropdown-menu d-none">
+              <button type="button" class="dropdown-option">Hunza Valley</button>
+              <button type="button" class="dropdown-option">Skardu</button>
+              <button type="button" class="dropdown-option">Swat Valley</button>
+              <button type="button" class="dropdown-option">Fairy Meadows</button>
+              <button type="button" class="dropdown-option">Neelum Valley</button>
+            </div>
+          </div>
+
+          <div class="search-divider"></div>
+
+          <div class="search-item" data-dropdown="dates">
+            <div class="search-icon">
+              <i class="bi bi-calendar3"></i>
+            </div>
+            <div class="search-text">
+              <span class="search-label">DATES</span>
+              <span class="search-value">Travel Dates</span>
+            </div>
+            <i class="bi bi-chevron-down ms-auto text-muted small"></i>
+            <div class="search-dropdown-menu d-none">
+              <button type="button" class="dropdown-option">Spring Blossom (Apr - May)</button>
+              <button type="button" class="dropdown-option">Summer Escape (Jun - Aug)</button>
+              <button type="button" class="dropdown-option">Autumn Colors (Sep - Oct)</button>
+              <button type="button" class="dropdown-option">Winter Expedition (Nov - Feb)</button>
+            </div>
+          </div>
+
+          <div class="search-divider"></div>
+
+          <div class="search-item" data-dropdown="travelers">
+            <div class="search-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <div class="search-text">
+              <span class="search-label">TRAVELERS</span>
+              <span class="search-value">Guests</span>
+            </div>
+            <i class="bi bi-chevron-down ms-auto text-muted small"></i>
+            <div class="search-dropdown-menu d-none">
+              <button type="button" class="dropdown-option">1 Solo Traveler</button>
+              <button type="button" class="dropdown-option">2 Guests (Couple)</button>
+              <button type="button" class="dropdown-option">3 - 5 Guests (Family)</button>
+              <button type="button" class="dropdown-option">6+ Guests (Group)</button>
+            </div>
+          </div>
+
+          <button class="btn btn-search" type="button" id="searchSubmitBtn">
+            <i class="bi bi-search me-2"></i> Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="section-padding" id="destinations">
+    <div class="container">
+      <div class="section-header d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="section-subtitle">POPULAR DESTINATIONS</span>
+          <h2 class="section-title">Explore the Northern Areas</h2>
+        </div>
+        <a href="#destinations" class="section-link">
+          VIEW ALL DESTINATIONS <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- 1: Hunza Valley -->
+        <a href="#packages" class="destination-card">
+          <div class="destination-img-wrap">
+            <img src="https://images.unsplash.com/photo-1638295381225-c6cd6a467935?auto=format&fit=crop&w=800&q=85" alt="Hunza Valley" class="destination-img">
+          </div>
+          <div class="destination-footer">
+            <h5 class="destination-name">Hunza Valley</h5>
+            <span class="destination-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 2: Skardu -->
+        <a href="#packages" class="destination-card">
+          <div class="destination-img-wrap">
+            <img src="https://images.unsplash.com/photo-1679951124125-50cc4029d727?auto=format&fit=crop&w=800&q=85" alt="Skardu" class="destination-img">
+          </div>
+          <div class="destination-footer">
+            <h5 class="destination-name">Skardu</h5>
+            <span class="destination-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 3: Swat Valley -->
+        <a href="#packages" class="destination-card">
+          <div class="destination-img-wrap">
+            <img src="https://images.unsplash.com/photo-1667922210719-566cbfec2b11?auto=format&fit=crop&w=800&q=85" alt="Swat Valley" class="destination-img">
+          </div>
+          <div class="destination-footer">
+            <h5 class="destination-name">Swat Valley</h5>
+            <span class="destination-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 4: Fairy Meadows -->
+        <a href="#packages" class="destination-card">
+          <div class="destination-img-wrap">
+            <img src="https://images.unsplash.com/photo-1691077015817-64ee69ec020c?auto=format&fit=crop&w=800&q=85" alt="Fairy Meadows" class="destination-img">
+          </div>
+          <div class="destination-footer">
+            <h5 class="destination-name">Fairy Meadows</h5>
+            <span class="destination-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- 5: Neelum Valley -->
+        <a href="#packages" class="destination-card">
+          <div class="destination-img-wrap">
+            <img src="https://images.unsplash.com/photo-1613536171182-5b07d57e2d8d?auto=format&fit=crop&w=800&q=85" alt="Neelum Valley" class="destination-img">
+          </div>
+          <div class="destination-footer">
+            <h5 class="destination-name">Neelum Valley</h5>
+            <span class="destination-arrow"><i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Tour Packages -->
+  <section class="section-padding pt-0" id="packages">
+    <div class="container">
+      <div class="section-header d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="section-subtitle">FEATURED TOUR PACKAGES</span>
+          <h2 class="section-title">Our Tour Packages</h2>
+        </div>
+        <a href="#packages" class="section-link">
+          VIEW ALL PACKAGES <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1: Hunza Valley Tour -->
+        <div class="col-md-6 col-lg-4">
+          <div class="package-card">
+            <div class="package-img-wrap">
+              <img src="https://images.unsplash.com/photo-1663745343410-e57c101d1622?auto=format&fit=crop&w=900&q=85" alt="Hunza Valley Tour" class="package-img">
+              <span class="package-badge">5 Days / 4 Nights</span>
+            </div>
+            <div class="package-body">
+              <h4 class="package-title">Hunza Valley Tour</h4>
+              <p class="package-desc">
+                Discover the beauty of Hunza, Karimabad, and the iconic Attabad Lake.
+              </p>
+              <div class="package-footer">
+                <div>
+                  <span class="package-price-label">STARTING FROM</span>
+                  <div class="package-price">PKR 49,999</div>
+                </div>
+                <a href="#contact" class="btn btn-package">Explore Tour &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Skardu Adventure -->
+        <div class="col-md-6 col-lg-4">
+          <div class="package-card">
+            <div class="package-img-wrap">
+              <img src="https://images.unsplash.com/photo-1633596615936-472c3bea407c?auto=format&fit=crop&w=900&q=85" alt="Skardu Adventure" class="package-img">
+              <span class="package-badge">6 Days / 5 Nights</span>
+            </div>
+            <div class="package-body">
+              <h4 class="package-title">Skardu Adventure</h4>
+              <p class="package-desc">
+                Explore majestic Skardu, Shangrila Resort, and Deosai National Plains.
+              </p>
+              <div class="package-footer">
+                <div>
+                  <span class="package-price-label">STARTING FROM</span>
+                  <div class="package-price">PKR 54,999</div>
+                </div>
+                <a href="#contact" class="btn btn-package">Explore Tour &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Swat Valley Tour -->
+        <div class="col-md-6 col-lg-4">
+          <div class="package-card">
+            <div class="package-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574088394043-6ff958fe8419?auto=format&fit=crop&w=900&q=85" alt="Swat Valley Tour" class="package-img">
+              <span class="package-badge">7 Days / 6 Nights</span>
+            </div>
+            <div class="package-body">
+              <h4 class="package-title">Swat Valley Tour</h4>
+              <p class="package-desc">
+                Experience the serene pine forests of Kalam, Malam Jabba, and Mahodand Lake.
+              </p>
+              <div class="package-footer">
+                <div>
+                  <span class="package-price-label">STARTING FROM</span>
+                  <div class="package-price">PKR 45,999</div>
+                </div>
+                <a href="#contact" class="btn btn-package">Explore Tour &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Gallery -->
+  <section class="section-padding pt-0" id="gallery">
+    <div class="container">
+      <div class="section-header mb-4">
+        <span class="section-subtitle">TRAVEL GALLERY</span>
+        <h2 class="section-title">Experience Pakistan</h2>
+      </div>
+
+      <div class="row g-3 g-lg-4 gallery-row">
+        <!-- Left: Tall Snow Valley -->
+        <div class="col-md-5 col-lg-5">
+          <div class="gallery-item gallery-tall">
+            <img src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?auto=format&fit=crop&w=1000&q=85" alt="Winter Valley Pakistan" class="gallery-img">
+          </div>
+        </div>
+
+        <!-- Middle: 2 Stacked Images -->
+        <div class="col-md-4 col-lg-4 d-flex flex-column gap-3 gap-lg-4">
+          <div class="gallery-item gallery-stacked">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=85" alt="Alpine Lake Pakistan" class="gallery-img">
+          </div>
+          <div class="gallery-item gallery-stacked">
+            <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=800&q=85" alt="Baltit Fort Hunza" class="gallery-img">
+          </div>
+        </div>
+
+        <!-- Right: Tall Mountain Road with Car -->
+        <div class="col-md-3 col-lg-3">
+          <div class="gallery-item gallery-tall">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=85" alt="Karakoram Mountain Highway" class="gallery-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding pt-0" id="reviews">
+    <div class="container">
+      <div class="section-header d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <span class="section-subtitle">WHAT OUR TRAVELERS SAY</span>
+          <h2 class="section-title">Stories From The Mountains</h2>
+        </div>
+        <div class="slider-arrows d-flex gap-2">
+          <button class="btn-arrow" id="prevReview" aria-label="Previous review">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="btn-arrow" id="nextReview" aria-label="Next review">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="reviewCardsContainer">
+        <!-- Review 1: Areeba Khan -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <div class="review-quote-icon">““</div>
+            <p class="review-text">
+              “An unforgettable journey! Northern Pakistan is truly magical and the Northscape team arranged every hotel and drive with utmost precision.”
+            </p>
+            <div class="review-author-wrap">
+              <div class="author-info">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=85" alt="Areeba Khan" class="author-avatar">
+                <div>
+                  <h6 class="author-name">Areeba Khan</h6>
+                  <span class="author-location"><i class="bi bi-geo-alt-fill"></i> Lahore</span>
+                </div>
+              </div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2: Usman Ahmed -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <div class="review-quote-icon">““</div>
+            <p class="review-text">
+              “Excellent service and breathtaking destinations! The Skardu adventure was seamless and our mountain tour guides were super helpful.”
+            </p>
+            <div class="review-author-wrap">
+              <div class="author-info">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=85" alt="Usman Ahmed" class="author-avatar">
+                <div>
+                  <h6 class="author-name">Usman Ahmed</h6>
+                  <span class="author-location"><i class="bi bi-geo-alt-fill"></i> Karachi</span>
+                </div>
+              </div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3: Zainab Fatima -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <div class="review-quote-icon">““</div>
+            <p class="review-text">
+              “Highly recommended for anyone who loves travel! From Hunza valley to Attabad lake, every day felt like a dream come true.”
+            </p>
+            <div class="review-author-wrap">
+              <div class="author-info">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=85" alt="Zainab Fatima" class="author-avatar">
+                <div>
+                  <h6 class="author-name">Zainab Fatima</h6>
+                  <span class="author-location"><i class="bi bi-geo-alt-fill"></i> Islamabad</span>
+                </div>
+              </div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-mountains-svg" aria-hidden="true">
+      <svg viewBox="0 0 700 320" fill="none" preserveAspectRatio="none">
+        <polygon points="120,320 380,80 580,320" fill="#154432" opacity="0.6"/>
+        <polygon points="320,320 540,110 740,320" fill="#184e3a" opacity="0.8"/>
+      </svg>
+    </div>
+
+    <div class="container position-relative z-2">
+      <div class="row g-4 gy-5 justify-content-between">
+        <!-- Col 1: Brand & Socials -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand mb-3">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="brand-icon footer-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 18L10 8L14 14L17 10L21 18H4Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div class="brand-text">
+                <span class="brand-title text-white">NORTHSCAPE</span>
+                <span class="brand-subtitle text-white-50">PAKISTAN</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Explore. Discover. Travel.</p>
+          </div>
+          <div class="footer-socials d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">QUICK LINKS</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#gallery">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Destinations -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">POPULAR DESTINATIONS</h5>
+          <ul class="footer-links">
+            <li><a href="#destinations">Hunza</a></li>
+            <li><a href="#destinations">Skardu</a></li>
+            <li><a href="#destinations">Swat</a></li>
+            <li><a href="#destinations">Fairy Meadows</a></li>
+            <li><a href="#destinations">Neelum Valley</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">CONTACT US</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:info@northscape.pk">info@northscape.pk</a>
+            </li>
+            <li>
+              <i class="bi bi-telephone"></i>
+              <a href="tel:+923001234567">+92 300 123 4567</a>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>Islamabad, Pakistan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-white-50 small">&copy; 2025 Northscape Pakistan. All rights reserved.</p>
+        <div class="footer-legal small">
+          <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a>
+          <span class="mx-2 text-white-50">|</span>
+          <a href="#" class="text-white-50 text-decoration-none">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
